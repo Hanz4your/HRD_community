@@ -1,0 +1,3 @@
+nambahin tulisan di bawah kanan gambar bertulisan"(klik image to instagram)" 
+membuat animasi tulisan turun ketika cursor di arahkan ke salah satu mukas
+
