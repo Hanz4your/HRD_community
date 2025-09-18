@@ -64,12 +64,11 @@ html {
 /* kartu dimas/haris awal */
 .divdimasharis {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-right: 350px;
-  padding-left: 300px;
-
+  gap:500px;
 }
+
 
 .divdimasharis a {
   font-family: "Montserrat", sans-serif;
@@ -263,17 +262,28 @@ html {
 .kartu-profil {
   width: 50%;
   padding: 50px;
-  border: 1px solid #ccc;
+  border: 1px solid #fac106;
   border-radius: 70px;
   box-shadow: 20px 10px 5px rgba(0, 0, 0, 0.301);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid fac106;
+}
+.nama-jabatan-css{
+  animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .namajabatan img{
   display: inline-block;
   transition: transform 0.5s ease;
+    border: 1px solid #fac106;
 }
 
 .namajabatan img:hover {
@@ -332,10 +342,9 @@ html {
   opacity: 1;
   transition: opacity 0.5s ease;
   visibility: 0.5 ease;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-size: 14px;
   text-align: center;
   visibility: visible;
@@ -403,19 +412,7 @@ html {
 /* foto ber3 akhir */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* tabel awal */
 table{
   border-collapse: collapse;
   width: 34%;
@@ -426,27 +423,44 @@ table{
 }
 
 td,th {
-  border: 1px solid #dddddd;
+  border: 1px solid #acabab;
   text-align: center;
   padding: 10px;
   color: white;
 }
 
+th{
+  background-color: #121212
+}
+td{
+  background-color:#212121 
+}
+
 .isi-table{
   text-align: left;
-
 }
 
 .isi-table a{
-    color: #ffffff;
-    display: inline-block;
-  transition: transform 0.5s ease;
+  color: #ffffff;
   text-decoration: none;
+  position: relative;
+
 }
 
-.isi-table a:hover{
-    transform: scale(1.1);
-    color: #06faee;
+.isi-table a::before{
+  contain: '';
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  width: 0%;
+  height: 2px;
+  background-color:#fac106 ;
+  transition: all 0.3s ;
+
+}
+
+.isi-table a:hover::after{
+    width: 100%;
 }
 
 .isi-table img{
@@ -458,8 +472,77 @@ td,th {
 
 
 .petunjuk{
-  text-align: right;
+  text-align: center;
   margin-top: 10px;
+  color: white;
+  
 }
+/* tabel akhir */
+
+
+/* iframe awal */
+.iframe-css{
+  border: none;
+  width:350px ;
+  height:500px;
+}
+.text-iframe-css{
+ display: flex;
+  justify-content: space-between;
+  align-items:center;
+  gap:10px;
+  margin-left: 90px;
+  margin-right: 500px;
+
+}
+
+.text-css a{
+  color: #0d6965;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  transition: transform 0.5s ease;
+  display: flex;
+}
+.text-css a:hover{
+  color: #06faee  ;
+  transform:  translateX(20px);
+}
+.text-css{
+  display: flex;
+  flex-direction: column;
+}
+
+/* button awal  */
+.button-css{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  border-radius: 50%;
+  border: 1px solid #06faee;
+  transition-duration: 0.4s;
+  transition: transform 0.5 ease;
+  opacity: 0.6;
+}
+
+.button-css:hover{ 
+  box-shadow: 0 0px 30px 0 rgb(3, 156, 149),0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+.button-css:hover{
+  transform: scale(1.2);
+  opacity: 1000;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+/* button akhir  */
+/* iframe akhir */
 
  
