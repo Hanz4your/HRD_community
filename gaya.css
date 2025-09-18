@@ -66,7 +66,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:500px;
+  gap: 500px;
 }
 
 
@@ -86,7 +86,7 @@ html {
 .divdimasharis a:hover {
   color: white;
   transform: scale(1.1);
-  
+
 }
 
 .divdimasharis a:active {
@@ -96,6 +96,7 @@ html {
 .divharis {
   text-align: right;
 }
+
 /* kartu dimas/haris akhir */
 
 .materi a {
@@ -173,7 +174,7 @@ html {
 /* judul materi hrd akhir */
 
 /* isi materi hrd awal */
-.ceritanya{
+.ceritanya {
   text-align: center;
 }
 
@@ -270,32 +271,42 @@ html {
   margin-right: auto;
   border: 1px solid fac106;
 }
-.nama-jabatan-css{
+
+.nama-jabatan-css {
   animation: blink 1s infinite;
   -webkit-animation: blink 1s infinite;
 }
+
 @keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-.namajabatan img{
+.namajabatan img {
   display: inline-block;
   transition: transform 0.5s ease;
-    border: 1px solid #fac106;
+  border: 1px solid #fac106;
 }
 
 .namajabatan img:hover {
   transform: scale(1.1);
 }
 
-.image-container{
+.image-container {
   position: relative;
   display: inline-block;
 }
 
-.deskripsi-foto{
+.deskripsi-foto {
   position: absolute;
   left: 50%;
   bottom: -12px;
@@ -316,6 +327,7 @@ html {
 .image-container:hover .deskripsi-foto {
   opacity: 0;
 }
+
 /* kartu profil akhir */
 /* kartu akhir */
 
@@ -332,7 +344,7 @@ html {
 }
 
 
-.info-trio{
+.info-trio {
   position: absolute;
   left: 50%;
   bottom: -20px;
@@ -355,16 +367,16 @@ html {
   -o-transform: translateX(-50%);
 }
 
-.fotober3{
+.fotober3 {
   position: relative;
   display: inline-block;
 }
 
-.tengah{
+.tengah {
   text-align: center;
 }
 
-.fotober3:hover img{
+.fotober3:hover img {
   transform: scale(1.08);
 
 }
@@ -374,46 +386,50 @@ html {
   box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.6);
 }
 
-.fotober3:hover .info-trio{
+.fotober3:hover .info-trio {
   opacity: 0;
   visibility: hidden;
 }
 
-  /* nama awal */
-.nama-trio{
+/* nama awal */
+.nama-trio {
   position: absolute;
-    top: 50%; /* Posisi awal di tengah */
-    left: 50%;
-    transform: translate(-50%, -50%) translateY(-30px); /* Geser ke atas */
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    opacity: 0; /* Sembunyikan */
-    visibility: hidden;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    pointer-events: none; /* Agar tidak mengganggu kursor */
+  top: 50%;
+  /* Posisi awal di tengah */
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-30px);
+  /* Geser ke atas */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  /* Sembunyikan */
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  /* Agar tidak mengganggu kursor */
 }
 
-.nama-trio.visible{
+.nama-trio.visible {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%,-50%) translateY(0);
-  -webkit-transform: translate(-50%,-50%) translateY(0);
-  -moz-transform: translate(-50%,-50%) translateY(0);
-  -ms-transform: translate(-50%,-50%) translateY(0);
-  -o-transform: translate(-50%,-50%) translateY(0);
+  transform: translate(-50%, -50%) translateY(0);
+  -webkit-transform: translate(-50%, -50%) translateY(0);
+  -moz-transform: translate(-50%, -50%) translateY(0);
+  -ms-transform: translate(-50%, -50%) translateY(0);
+  -o-transform: translate(-50%, -50%) translateY(0);
 }
 
-  /* nama akhir */
+/* nama akhir */
 /* foto ber3 akhir */
 
 
 /* tabel awal */
-table{
+table {
   border-collapse: collapse;
   width: 34%;
   margin: 100px auto;
@@ -422,81 +438,85 @@ table{
   font-style: italic;
 }
 
-td,th {
+td,
+th {
   border: 1px solid #acabab;
   text-align: center;
   padding: 10px;
   color: white;
 }
 
-th{
+th {
   background-color: #121212
 }
-td{
-  background-color:#212121 
+
+td {
+  background-color: #212121
 }
 
-.isi-table{
+.isi-table {
   text-align: left;
 }
 
-.isi-table a{
+.isi-table a {
   color: #ffffff;
   text-decoration: none;
   position: relative;
 
 }
 
-.isi-table a::before{
+.isi-table a::before {
   contain: '';
   position: absolute;
   left: 0;
   bottom: -13px;
   width: 0%;
   height: 2px;
-  background-color:#fac106 ;
-  transition: all 0.3s ;
+  background-color: #fac106;
+  transition: all 0.3s;
 
 }
 
-.isi-table a:hover::after{
-    width: 100%;
+.isi-table a:hover::after {
+  width: 100%;
 }
 
-.isi-table img{
+.isi-table img {
   height: 16px;
   width: 16px;
   vertical-align: middle;
   margin-right: 5px;
-  }
+}
 
 
-.petunjuk{
+.petunjuk {
   text-align: center;
   margin-top: 10px;
   color: white;
-  
+
 }
+
 /* tabel akhir */
 
 
 /* iframe awal */
-.iframe-css{
+.iframe-css {
   border: none;
-  width:350px ;
-  height:500px;
+  width: 350px;
+  height: 500px;
 }
-.text-iframe-css{
- display: flex;
+
+.text-iframe-css {
+  display: flex;
   justify-content: space-between;
-  align-items:center;
-  gap:10px;
+  align-items: center;
+  gap: 10px;
   margin-left: 90px;
   margin-right: 500px;
 
 }
 
-.text-css a{
+.text-css a {
   color: #0d6965;
   text-decoration: none;
   font-size: 50px;
@@ -507,17 +527,19 @@ td{
   transition: transform 0.5s ease;
   display: flex;
 }
-.text-css a:hover{
-  color: #06faee  ;
-  transform:  translateX(20px);
+
+.text-css a:hover {
+  color: #06faee;
+  transform: translateX(20px);
 }
-.text-css{
+
+.text-css {
   display: flex;
   flex-direction: column;
 }
 
 /* button awal  */
-.button-css{
+.button-css {
   background-color: rgb(255, 255, 255);
   color: #000000;
   font-size: 13px;
@@ -531,10 +553,11 @@ td{
   opacity: 0.6;
 }
 
-.button-css:hover{ 
-  box-shadow: 0 0px 30px 0 rgb(3, 156, 149),0 17px 50px 0 rgba(0,0,0,0.19); 
+.button-css:hover {
+  box-shadow: 0 0px 30px 0 rgb(3, 156, 149), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.button-css:hover{
+
+.button-css:hover {
   transform: scale(1.2);
   opacity: 1000;
   -webkit-transform: scale(1.2);
@@ -542,7 +565,6 @@ td{
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
 }
+
 /* button akhir  */
 /* iframe akhir */
-
- 
